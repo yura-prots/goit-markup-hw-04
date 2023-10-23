@@ -147,7 +147,7 @@ header {
   text-align: center;
 }
 
-.overlay {
+.hero.overlay {
   height: 600px;
   max-width: 1600px;
   margin-right: auto;
