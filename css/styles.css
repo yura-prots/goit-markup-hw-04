@@ -112,16 +112,17 @@ header {
   color: var(--accent-color);
 }
 
-.info.list {
+.info-list {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 
-.info .item:not(:last-child) {
+.info-item:not(:last-child) {
   margin-right: 40px;
 }
 
-.info .link {
+.info-link {
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -134,9 +135,15 @@ header {
   color: var(--primary-text-color);
 }
 
-.info .link:hover,
-.info .link:focus {
+.info-link:hover,
+.info-link:focus {
   color: var(--accent-color);
+}
+
+.info-icon {
+  display: inline-block;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Герой */
@@ -348,7 +355,7 @@ img {
   margin-right: 10px;
 }
 
-.socials .link {
+.socials-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -359,18 +366,19 @@ img {
   border-radius: 50%;
 }
 
-.socials .link:hover,
-.socials .link:focus {
+.socials-link:hover {
   background-color: var(--accent-color);
 }
 
-.socials .icon {
-  fill: var(--primary-icon-color);
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
+  fill: var(--primary-bg-color);
 }
 
-.socials .icon:hover,
-.socials .icon:focus {
-  fill: var(--primary-bg-color);
+.socials-icon {
+  margin: 0;
+
+  fill: var(--primary-icon-color);
 }
 
 /* Портфоліо */
