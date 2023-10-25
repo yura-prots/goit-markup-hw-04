@@ -451,6 +451,8 @@ img {
 .portfolio .list-button:focus {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio .works {
@@ -474,6 +476,11 @@ img {
 
 .portfolio .link {
   text-decoration: none;
+}
+
+.works .item:hover {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .works .card {
@@ -514,11 +521,10 @@ img {
 
 .footer .container {
   display: flex;
-  flex-direction: column;
 }
 
 .footer .logo {
-  margin: 0;
+  display: inline-block;
   margin-bottom: 28px;
   padding: 0;
   width: 145px;
@@ -526,6 +532,10 @@ img {
 
 .logo-studio-white {
   color: var(--primary-bg-color);
+}
+
+.footer-address {
+  margin-right: 70px;
 }
 
 .address {
@@ -566,4 +576,27 @@ img {
 .address .link:hover,
 .address .link:focus {
   color: var(--accent-color);
+}
+
+.footer .socials {
+  display: flex;
+}
+
+.footer-socials .title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  color: var(--primary-bg-color);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.footer .socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer .socials-icon {
+  fill: var(--primary-bg-color);
 }
