@@ -32,6 +32,11 @@ body {
   padding-left: 15px;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -97,6 +102,15 @@ header {
   color: var(--secondary-text-color);
 }
 
+.nav .link.current {
+  color: var(--accent-color);
+}
+
+.nav .link:hover,
+.nav .link:focus {
+  color: var(--accent-color);
+}
+
 .info {
   display: flex;
   margin-left: auto;
@@ -119,23 +133,9 @@ header {
   color: var(--primary-text-color);
 }
 
-.nav .link.current {
-  color: var(--accent-color);
-}
-
-.nav .link:hover,
-.nav .link:focus {
-  color: var(--accent-color);
-}
-
 .info .link:hover,
 .info .link:focus {
   color: var(--accent-color);
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 /* Герой */
@@ -212,8 +212,22 @@ header {
   width: 270px;
 }
 
-.features .item + .item {
-  margin-left: 30px;
+.features .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features .icon-box {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+
+  border-radius: 4px;
+  background-color: var(--secondary-bg-color);
+}
+
+.features .icon {
+  margin: 0;
 }
 
 .features .title {
@@ -268,8 +282,8 @@ img {
   display: flex;
 }
 
-.examples .item + .item {
-  margin-left: 30px;
+.examples .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Наша команда */
@@ -289,8 +303,8 @@ img {
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
-.team .item + .item {
-  margin-left: 30px;
+.team .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team .card {
@@ -331,8 +345,8 @@ img {
   justify-content: center;
 }
 
-.filter .item + .item {
-  margin-left: 8px;
+.filter .item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .portfolio .list-button {
