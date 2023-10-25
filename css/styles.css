@@ -5,6 +5,7 @@
   --accent-color: #2196f3;
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
+  --primary-icon-color: #afb1b8;
   --hero-bg-color: #c4c4c4;
   --footer-bg-color: #2f303a;
   --address-text-color: rgba(255, 255, 255, 0.6);
@@ -111,13 +112,13 @@ header {
   color: var(--accent-color);
 }
 
-.info {
+.info.list {
   display: flex;
   margin-left: auto;
 }
 
-.info .item + .item {
-  margin-left: 40px;
+.info .item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .info .link {
@@ -327,6 +328,7 @@ img {
 
 .team .card-text {
   margin: 0;
+  margin-bottom: 16px;
 
   font-size: 16px;
   font-weight: 400;
@@ -335,6 +337,40 @@ img {
   text-align: center;
 
   color: var(--primary-text-color);
+}
+
+.team .socials {
+  justify-content: center;
+  align-items: center;
+}
+
+.team .socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+}
+
+.socials .link:hover,
+.socials .link:focus {
+  background-color: var(--accent-color);
+}
+
+.socials .icon {
+  fill: var(--primary-icon-color);
+}
+
+.socials .icon:hover,
+.socials .icon:focus {
+  fill: var(--primary-bg-color);
 }
 
 /* Портфоліо */
