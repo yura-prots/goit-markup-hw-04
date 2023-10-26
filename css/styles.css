@@ -6,6 +6,7 @@
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
   --primary-icon-color: #afb1b8;
+  --footer-icon-bg-color: rgba(255, 255, 255, 0.1);
   --hero-bg-color: #c4c4c4;
   --footer-bg-color: #2f303a;
   --address-text-color: rgba(255, 255, 255, 0.6);
@@ -591,6 +592,11 @@ img {
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+}
+
+.footer .socials-item {
+  border-radius: 50%;
+  background-color: var(--footer-icon-bg-color);
 }
 
 .footer .socials-item:not(:last-child) {
